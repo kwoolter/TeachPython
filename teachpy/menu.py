@@ -49,6 +49,9 @@ class TeachPyCLI(cmd.Cmd):
             pass
         elif module_number == 2:
             from . import module2
+        elif module_number == 3:
+            from . import module3
+            module3.main()
 
         return
 
