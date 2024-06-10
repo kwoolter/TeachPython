@@ -1,9 +1,6 @@
-__author__ = 'user'
-
 import logging
 import sys
 import time
-
 
 # Function to ask the user a simple Yes/No confirmation and return a boolean
 def confirm(question: str):
@@ -72,7 +69,7 @@ def pick(object_type: str, objects: list, auto_pick: bool = False):
 
 
 def is_numeric(s: str):
-    """ Is a specificed string numeric?"""
+    """ Is a specified string numeric?"""
 
     try:
         x = int(s)
@@ -94,7 +91,7 @@ def type_text(text: str, wait=0.1):
 
 
 def main():
-    type_text("Testing out the KW Utils Functions\n\n")
+    type_text(f"Testing out the {__name__} Functions\n\n")
     if confirm("OK to continue?"):
         type_text("Great! Let's get going...")
     else:
