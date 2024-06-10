@@ -37,6 +37,7 @@ class TeachPyCLI(cmd.Cmd):
             selection = arg
 
             try:
+
                 module_number = modules.index(arg) + 1
                 utils.type_text(f"Starting module {module_number}. {selection}...\n")
 
@@ -46,12 +47,16 @@ class TeachPyCLI(cmd.Cmd):
 
         if module_number == 1:
             from . import module1
-            pass
+            module1.main()
         elif module_number == 2:
             from . import module2
+            module2.main()
         elif module_number == 3:
             from . import module3
             module3.main()
+        elif module_number == 4:
+            from . import module4
+            module4.main()
 
         return
 

@@ -4,8 +4,10 @@ import logging
 def main():
 
     logging.basicConfig(level=logging.WARN)
-
-    teachpy.run()
+    try:
+        teachpy.run()
+    except Exception as e:
+        print(e)
 
 if __name__ == "__main__":
     main()

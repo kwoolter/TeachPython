@@ -2,6 +2,8 @@ import numpy as np
 
 def main():
 
+    print(f"Welcome to {__name__}")
+
     a = np.zeros((5,10))
     a[0][1] = 1
     a[1][0] = 2

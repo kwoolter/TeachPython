@@ -62,7 +62,7 @@ def pick(object_type: str, objects: list, auto_pick: bool = False):
                 selected_object = objects[choice - 1]
                 logging.info("pick(): You chose %s %s." % (object_type, str(selected_object)))
             elif choice == (choices + 1):
-                raise (Exception("You cancelled. No %s selected" % object_type))
+                raise (Exception("You cancelled. No %s selected." % object_type))
             else:
                 print("Invalid choice '%i' - try again." % choice)
         else:
