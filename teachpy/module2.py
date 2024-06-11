@@ -1,8 +1,10 @@
+print(f"\nYou have imported {__name__}...\n")
+
 from . teachpy_utils.kwtext import *
 
 def main():
 
-    print(f"Welcome to {__name__}")
+    print(f"Welcome to module {__name__}")
     print(f"Location:{__file__}")
 
     t = KWTextView()
