@@ -1,9 +1,9 @@
 print(f"\nYou have imported {__name__}...\n")
 
-from . teachpy_utils.kwtext import *
+from .teachpy_utils.kwtext import *
+
 
 def main():
-
     print(f"Welcome to module {__name__}.")
     print(f"Location:{__file__}")
 
@@ -28,7 +28,6 @@ def main():
     colours[0][0] = Fore.YELLOW + Back.BLACK + Style.BRIGHT
 
     t.print_grid(g, colours, override=colour_map)
-
 
     print(Fore.RED + "Bye")
 

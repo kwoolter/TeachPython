@@ -1,8 +1,11 @@
+import pandas as pd
+
 
 def main():
-
     print(f"Welcome to module {__name__}.")
     print(f"Location:{__file__}")
+
+    print(f"We are working with pandas version {pd.__version__}.")
 
 
 def initialise():

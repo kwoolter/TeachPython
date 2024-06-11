@@ -34,15 +34,15 @@ class TeachPyCLI(cmd.Cmd):
 
 
         else:
-            selection = arg
+            module_number = int(arg)
 
             try:
 
-                module_number = modules.index(arg) + 1
-                utils.type_text(f"Starting module {module_number}. {selection}...\n")
+                module = modules[module_number - 1]
+                utils.type_text(f"Starting module {module_number}. {module}...\n")
 
             except ValueError:
-                print(f"Module '{selection}' not found")
+                print(f"Module '{module_number}' not found")
                 return
 
         if module_number == 1:
