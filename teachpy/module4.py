@@ -7,6 +7,14 @@ def main():
 
     print(f"We are working with pandas version {pd.__version__}.")
 
+    file_name = "comics.csv"
+    file_location = ".\\data"
+
+    print(f"Loading {file_location}\\{file_name}")
+
+    comics = pd.read_csv(f"{file_location}\\{file_name}")
+    print(comics.describe())
+
 
 def initialise():
     print(f"Initialising {__name__}")
