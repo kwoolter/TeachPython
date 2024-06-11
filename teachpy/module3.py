@@ -4,7 +4,7 @@ import numpy as np
 
 def main():
 
-    print(f"Welcome to module {__name__}")
+    print(f"Welcome to module {__name__}.")
     print(f"Location:{__file__}")
 
     a = np.zeros((5,10))
