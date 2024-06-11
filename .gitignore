@@ -146,3 +146,4 @@ cython_debug/
 /.idea/TeachPython.iml
 /.idea/vcs.xml
 /docs/
+/.idea/
