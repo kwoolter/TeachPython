@@ -13,7 +13,7 @@ def main():
     print(f"Loading {file_location}\\{file_name}")
 
     comics = pd.read_csv(f"{file_location}\\{file_name}")
-    print(comics.describe())
+    print(comics.head(10))
 
 
 def initialise():
